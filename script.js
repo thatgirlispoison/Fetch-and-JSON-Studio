@@ -6,14 +6,16 @@ window.addEventListener('load', function() {
             
             div.innerHTML += `
                 <div class="astronaut" >
-                    
-                    <h3>${json[astronaut].firstName} ${json[astronaut].lastName}</h3>
+                    <div class="bio" >
+                        <h3>${json[astronaut].firstName} ${json[astronaut].lastName}</h3>
                         <ul>
                             <li>Hours in space: ${json[astronaut].hoursInSpace}</li>
                             <li>Active: ${json[astronaut].active}</li>
                             <li>Skills: ${json[astronaut].skills}</li>
                             
                         </ul>
+                    
+                    </div>
                     <img class="avatar" src=${json[astronaut].picture}>
                 </div>
                  
